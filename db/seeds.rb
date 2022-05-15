@@ -1,7 +1,33 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+Kit.create(name: "Starship",
+  kick: "k",
+  snare: "s",
+  hh_closed: "hhc",
+  hh_open: "hho",
+  melody: "m",
+  texture: "t",
+  one_shot_1: "1s1",
+  one_shot_2: "1s2",
+  groove_url: "g"
+)
+Kit.create(name: "Dyson Sphere",
+  kick: "k",
+  snare: "s",
+  hh_closed: "hhc",
+  hh_open: "hho",
+  melody: "m",
+  texture: "t",
+  one_shot_1: "1s1",
+  one_shot_2: "1s2",
+  groove_url: "g"
+)
+Kit.create(name: "Orbital Station",
+  kick: "k",
+  snare: "s",
+  hh_closed: "hhc",
+  hh_open: "hho",
+  melody: "m",
+  texture: "t",
+  one_shot_1: "1s1",
+  one_shot_2: "1s2",
+  groove_url: "g"
+)
