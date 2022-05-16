@@ -53,4 +53,16 @@ RSpec.describe 'Kits Request', type: :request do
     expected = ["Starship", "Dyson Sphere", "Orbital Station"]
     expect(kits).to eq(expected)
   end
+
+  it 'returns the name of the search kit name' do
+    kit_name = "Starship"
+    get "/api/v1/kits/#{kit_name}"
+
+    body = JSON.parse(response.body, symbolize_names: true)
+
+    found_name = body[:name]
+    expect(found_name).to eq(kit_name)
+    expect(found_name).to_not eq("Dyson Sphere")
+    expect(found_name).to_not eq("Orbital Station")
+  end
 end
