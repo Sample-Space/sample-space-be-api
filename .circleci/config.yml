@@ -66,4 +66,4 @@ jobs:
               bundle exec rails db:migrate RAILS_ENV=test
       - ruby/rspec-test:
           label: RSpec tests
-          include: spec/*/**_spec.rb
+          include: spec/**/*_spec.rb
