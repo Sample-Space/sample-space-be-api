@@ -64,9 +64,10 @@ jobs:
           command: |
               bundle exec rails db:create RAILS_ENV=test
               bundle exec rails db:migrate RAILS_ENV=test
-      - ruby/rspec-test:
-          label: RSpec tests
-          include: spec/**/*_spec.rb
+      - ruby/rspec-test
+          # label: RSpec tests
+          # include: spec/**/*_spec.rb
+
         # - run:
         #   name: run tests
         #   command: |
