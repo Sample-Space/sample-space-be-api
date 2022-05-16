@@ -50,7 +50,7 @@ RSpec.describe 'Kits Request', type: :request do
     body = JSON.parse(response.body, symbolize_names: true)
 
     kits = body[:kits]
-    expected = ["Starship", "Dyson Sphere", "Orbital Station"]
+    expected = ["Starship", "Dyyson Sphere", "Orbital Station"]
     expect(kits).to eq(expected)
   end
 end
