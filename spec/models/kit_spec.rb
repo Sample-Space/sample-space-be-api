@@ -11,6 +11,6 @@ RSpec.describe Kit, type: :model do
     it { should validate_presence_of(:texture) }
     it { should validate_presence_of(:one_shot_1) }
     it { should validate_presence_of(:one_shot_2) }
-    it { should validate_presence_of(:groove_url) }
+    it { should validate_presence_of(:groove_file) }
   end
 end

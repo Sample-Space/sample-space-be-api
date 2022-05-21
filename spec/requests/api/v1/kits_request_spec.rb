@@ -12,7 +12,7 @@ RSpec.describe 'Kits Request', type: :request do
       texture: "t",
       one_shot_1: "1s1",
       one_shot_2: "1s2",
-      groove_url: "g"
+      groove_file: "g"
     )
     @kit_2 = Kit.create(name: "Dyson Sphere",
       kick: "k",
@@ -23,7 +23,7 @@ RSpec.describe 'Kits Request', type: :request do
       texture: "t",
       one_shot_1: "1s1",
       one_shot_2: "1s2",
-      groove_url: "g"
+      groove_file: "g"
     )
     @kit_3 = Kit.create(name: "Orbital Station",
       kick: "k",
@@ -34,7 +34,7 @@ RSpec.describe 'Kits Request', type: :request do
       texture: "t",
       one_shot_1: "1s1",
       one_shot_2: "1s2",
-      groove_url: "g"
+      groove_file: "g"
     )
   end
 
