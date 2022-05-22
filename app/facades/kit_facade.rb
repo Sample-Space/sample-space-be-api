@@ -21,4 +21,5 @@ class KitFacade
       one_shot_1: SampleObject.new(kit[:one_shot_1]),
       one_shot_2: SampleObject.new(kit[:one_shot_2])
     }
+  end
 end
