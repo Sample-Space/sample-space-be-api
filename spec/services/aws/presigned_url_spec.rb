@@ -1,5 +1,4 @@
 require 'rails_helper'
-require 'aws-sdk-s3'
 
 RSpec.describe 'Presigner', type: :service do
 

@@ -1,6 +1,17 @@
 Kit.destroy_all
 Sample.destroy_all
 
+Kit.create(name: "Andromeda Pain",
+  kick: "Star 808 Kepler KIC",
+  snare: "Plasmasphere Polar",
+  hh_closed: "Jupiter Sounds Cassini",
+  hh_open: "Cold Helium",
+  melody: "Plasma 9 Voyager 1",
+  texture: "Whistler Mode 1 Parker",
+  one_shot_1: "Whistler Waves EMFISIS",
+  one_shot_2: "Langmuir Waves Parker",
+  groove_file: "groove_stardust_passing_comet_temple_1.mp3"
+)
 Kit.create(name: "Andromeda Strain",
   kick: "Star 808 Kepler KIC",
   snare: "Plasmasphere Polar",
