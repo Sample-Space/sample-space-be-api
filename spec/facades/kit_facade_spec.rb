@@ -85,7 +85,7 @@ RSpec.describe KitFacade, type: :facade do
 
   it 'gets the names of all existing kits' do
     data = KitFacade.get_all_kits
-    kits = data[:kits]
+    kits = data["kits"]
     expect(kits).to eq (["Andromeda Pain", "Magnetosphere"])
   end
 
@@ -97,6 +97,30 @@ RSpec.describe KitFacade, type: :facade do
 
     kit_samples.values.each do |value|
       expect(value).to be_a SampleObject
+    end
+  end
+
+  it 'gets serialized kit data for a kit object' do
+    output = KitFacade.get_kit(@record)
+
+    kit = output["kit"]
+
+    expect(kit["name"]).to eq("Andromeda Pain")
+    expect(kit["id"]).to eq(@record.id)
+
+    expect(kit["groove_url"]).to be_a String
+    expect(kit["groove_url"]).to include "https://sampe-space.s3.amazonaws.com/#{@record.groove_file}"
+
+    elements = kit["elements"]
+    expect(elements).to be_a Hash
+    expect(elements.keys).to eq(["kick", "snare", "hh_closed", "hh_open", "melody", "texture", "one_shot_1", "one_shot_2"])
+
+    elements.values.each do |value|
+      expect(value).to be_a Hash
+      expect(value.keys).to eq(["name", "source_name", "sound_url", "thumbnail_url", "description", "info_url"])
+      value.values.each do |subvalue|
+        expect(subvalue).to be_a String
+      end
     end
   end
 end
