@@ -1,3 +1,5 @@
+require 'aws-sdk-s3'
+
 module Presignable
 
   def get_url(filename)
