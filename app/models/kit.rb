@@ -8,5 +8,5 @@ class Kit < ApplicationRecord
   validates :texture, presence: true
   validates :one_shot_1, presence: true
   validates :one_shot_2, presence: true
-  validates :groove_url, presence: true
+  validates :groove_file, presence: true
 end
