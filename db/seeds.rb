@@ -34,16 +34,16 @@ Kit.create(name: "Magnetosphere",
   one_shot_2: "G_Shields Up Cassini",
   groove_file: "groove_cassini_shields_up.mp3"
 )
-Kit.create(name: "Magnetosphere",
-  kick: "K_Magnetic Drum THEMIS",
-  snare: "SN_Jupiter Magnetosphere Juno",
-  hh_closed: "HH1_Jupiter Sounds Cassini",
-  hh_open: "HH2_Jupiter Sounds Cassini",
-  melody: "M_Cold Helium",
-  texture: "OS_Langmuir Waves Parker",
-  one_shot_1: "OS_Whistler Mode 1 Parker",
-  one_shot_2: "G_Shields Up Cassini",
-  groove_file: "groove_cassini_shields_up.mp3"
+Kit.create(name: "Apollo 11",
+  kick: "K_Eagle Has Landed",
+  snare: "SN_One Small Step",
+  hh_closed: "HH1_Eagle Has Landed",
+  hh_open: "HH2_Eagle Has Landed",
+  melody: "OS_Eagle Has Landed",
+  texture: "OS_One Small Step",
+  one_shot_1: "OS_One Giant Leap",
+  one_shot_2: "G_We Choose The Moon",
+  groove_file: "groove_jfk_wechoosethemoonspeech"
 )
 Sample.create(name: "Radio Waves EMFISIS",
   filename: "texture_chorus_radio_waves_within_earth_atmosphere.mp3",
