@@ -16,8 +16,8 @@ Kit.create(name: "Andromeda Strain",
 Kit.create(name: "Magnetosphere",
   kick: "K_Magnetic Drum THEMIS",
   snare: "SN_Jupiter Magnetosphere Juno",
-  hh_closed: "HH1_Jupiter Sounds Cassini",
-  hh_open: "HH2_Jupiter Sounds Cassini",
+  hh_closed: "HH1_Saturn Sounds Cassini",
+  hh_open: "HH2_Saturn Sounds Cassini",
   melody: "M_Cold Helium",
   texture: "OS_Langmuir Waves Parker",
   one_shot_1: "OS_Whistler Mode 1 Parker",
@@ -34,7 +34,7 @@ Kit.create(name: "Apollo 11",
   texture: "OS_One Small Step",
   one_shot_1: "OS_One Giant Leap",
   one_shot_2: "G_We Choose The Moon",
-  groove_file: "groove_jfk_wechoosethemoonspeech"
+  groove_file: "groove_jfk_wechoosethemoonspeech.mp3"
 )
 
 # Kicks
@@ -71,7 +71,7 @@ Sample.create(name: "SN_Jupiter Magnetosphere Juno",
   thumbnail_file: "juno.jpeg",
   description: "Juno will improve our understanding of the solar system's beginnings by revealing the origin and evolution of Jupiter.",
   info_url: "https://www.youtube.com/watch?v=vR_QP8Nl5bQ"
-)
+  )
 
 Sample.create(name: "SN_Plasmasphere Polar",
   filename: "snare_plasmaspheric_hiss.mp3",
@@ -79,7 +79,7 @@ Sample.create(name: "SN_Plasmasphere Polar",
   thumbnail_file: "nasa_polar.jpeg",
   description: "Plasmaspheric hiss waves as heard by NASA’s Polar mission as it passed around Earth.",
   info_url: "https://www.youtube.com/watch?v=vR_QP8Nl5bQ"
-)
+  )
 
 Sample.create(name: "SN_One Small Step",
   filename: "snare_small_step.mp3",
@@ -87,7 +87,7 @@ Sample.create(name: "SN_One Small Step",
   thumbnail_file: "one_small_step.jpeg",
   description: "The Eagle lunar lander, carrying Armstrong and Aldrin, landed on the Sea of Tranquility on July 20, 1969. Armstrong was the first one out, proclaiming for the ages: “That's one small step for man, one giant leap for mankind.”",
   info_url: "https://www.nasa.gov/mission_pages/apollo/apollo11.html"
-)
+  )
 
 # Hats Closed
 
@@ -97,7 +97,7 @@ Sample.create(name: "HH1_Saturn Sounds Cassini",
   thumbnail_file: "cassini.jpeg",
   description: "Hear intriguing radio waves that our Cassini spacecraft collected near Jupiter in January 2001.",
   info_url: "https://directory.eoportal.org/web/eoportal/satellite-missions/t/themis"
-)
+  )
 
   Sample.create(name: "HH1_Radar Echoes Titan Huygens",
   filename: "hat_radar_echoes_titan_surface.mp3",
@@ -105,7 +105,7 @@ Sample.create(name: "HH1_Saturn Sounds Cassini",
   thumbnail_file: "titan.jpeg",
   description: "This recording was produced by converting into audible sounds some of the radar echoes received by Huygens during the last few kilometers of its descent onto Saturn's moon Titan. As the probe approaches the ground, both the pitch and intensity increase. Scientists will use intensity of the echoes to speculate about the nature of the surface.",
   info_url: "https://solarsystem.nasa.gov/missions/huygens/in-depth/"
-)
+  )
 
 Sample.create(name: "HH1_Eagle Has Landed",
   filename: "hh_closed_eagle_has_landed.mp3",
@@ -113,7 +113,7 @@ Sample.create(name: "HH1_Eagle Has Landed",
   thumbnail_file: "apollo_astronaut.jpeg",
   description: "“The Eagle has landed,” Armstrong said at 4:18 p.m. The Eagle was the name of the lunar lander. Armstrong became the first person to walk on the moon, followed 20 minutes later by Aldrin.",
   info_url: "https://www.nasa.gov/mission_pages/apollo/missions/apollo11.html"
-)
+  )
 
 # Hats Open
 
@@ -123,7 +123,7 @@ Sample.create(name: "HH2_Saturn Sounds Cassini",
   thumbnail_file: "saturn_radio_emmissions.jpeg",
   description: "New research from the up-close Grand Finale orbits of NASA’s Cassini mission shows a surprisingly powerful interaction of plasma waves moving from Saturn to its moon Enceladus. Researchers converted the recording of plasma waves into a “whooshing” audio file that we can hear -- in the same way a radio translates electromagnetic waves into music. Much like air or water, plasma (the fourth state of matter) generates waves to carry energy. The recording was captured by the Radio Plasma Wave Science (RPWS) instrument Sept. 2, 2017, two weeks before Cassini was deliberately plunged into the atmosphere of Saturn.",
   info_url: "https://www.youtube.com/watch?v=vR_QP8Nl5bQ"
-)
+  )
 
 Sample.create(name: "HH2_Eagle Has Landed",
   filename: "hh_open_eagle_has_landed.mp3",
@@ -131,17 +131,17 @@ Sample.create(name: "HH2_Eagle Has Landed",
   thumbnail_file: "apollo_astronaut.jpeg",
   description: "“The Eagle has landed,” Armstrong said at 4:18 p.m. The Eagle was the name of the lunar lander. Armstrong became the first person to walk on the moon, followed 20 minutes later by Aldrin.",
   info_url: "https://www.nasa.gov/mission_pages/apollo/apollo11.html"
-)
+  )
 
 # Melodies
-  
+
 Sample.create(name: "M_Cold Helium",
   filename: "melody_ultra_cold_helium.mp3",
   source_name: "earth",
   thumbnail_file: "ultra_cold_helium_3.jpeg",
   description: "If you're squeamish, you may not want to listen to the strange whistle of ultra-cold liquid helium-3 that changes volume relative to the North Pole and Earth's rotation. When ultra-cold liquid helium-4 was squashed through an array of tiny apertures, a phenomenon occurred in which the helium-4 repeatedly sped up, slowed down and vibrated. This produced a 'quantum whistle' -- a whistling sound that went from high to low.",
   info_url: "https://www.youtube.com/watch?v=vR_QP8Nl5bQ"
-)
+  )
 
 Sample.create(name: "M_Plasma 9 Voyager 1",
   filename: "melody_voyage_plasma_9.mp3",
@@ -149,17 +149,25 @@ Sample.create(name: "M_Plasma 9 Voyager 1",
   thumbnail_file: "voyager_1.jpeg",
   description: "Voyager 1's plasma wave instrument detected the vibrations of dense interstellar plasma, or ionized gas, from October to November 2012 and April to May 2013. This sound reproduces the amplitude and frequency of the plasma waves as 'heard' by Voyager 1.",
   info_url: "https://www.youtube.com/watch?v=vR_QP8Nl5bQ"
-)
+  )
 
 # One-Shots
-  
+
+Sample.create(name: "OS_Whistler Mode 1 Parker",
+  filename: "one_shot_psp_whistler_mode_waves.mp3",
+  source_name: "parker_solar_probe",
+  thumbnail_file: "parker_solar_probe.jpeg",
+  description: "One year and three trips around the Sun later, NASA's Parker Solar Probe heard some weird, sci-fi sounds from plasma within the solar wind -- and those sounds may answer unanswered questions about how the wind forms.",
+  info_url: "https://www.youtube.com/watch?v=vR_QP8Nl5bQ"
+  )
+
 Sample.create(name: "OS_Whistler Waves EMFISIS",
   filename: "one_shot_whistler_waves.mp3",
   source_name: "earth",
   thumbnail_file: "EMFISIS_earth.jpeg",
   description: "Whistler waves as heard by the EMFISIS instrument aboard NASA’s Van Allen Probes as it passed around Earth.",
   info_url: "https://www.youtube.com/watch?v=vR_QP8Nl5bQ"
-)
+  )
 
 Sample.create(name: "OS_Langmuir Waves Parker",
   filename: "one_shot_psp_langmuir_waves.mp3",
@@ -167,7 +175,7 @@ Sample.create(name: "OS_Langmuir Waves Parker",
   thumbnail_file: "parker_solar_probe.jpeg",
   description: "One year and three trips around the Sun later, NASA's Parker Solar Probe heard some weird, sci-fi sounds from plasma within the solar wind -- and those sounds may answer unanswered questions about how the wind forms.",
   info_url: "https://www.youtube.com/watch?v=vR_QP8Nl5bQ"
-)
+  )
 
 Sample.create(name: "OS_Deep Space Hubble",
   filename: "one_shot_sonification_of_hubble_deep_space.mp3",
@@ -175,7 +183,7 @@ Sample.create(name: "OS_Deep Space Hubble",
   thumbnail_file: "sonification_of_hubble_deep_space.jpeg",
   description: "Space becomes 'sonified' in this visualization of a cluster of galaxies imaged by NASA's Hubble Space Telescope. Time flows left to right, and the frequency of sound changes from bottom to top, ranging from 30 to 1,000 hertz. Objects near the bottom of the image produce lower notes, while those near the top produce higher ones. Most of the visible specks are galaxies housing countless stars. A few individual stars shine brightly in the foreground. Stars and compact galaxies create short, clear tones, while sprawling spiral galaxies emit longer notes that change pitch. The higher density of galaxies near the center of the image — the heart of this galaxy cluster, known as RXC J0142.9+4438 — results in a swell of mid-range tones halfway through the video. Hubble's Advanced Camera for Surveys and Wide Field Camera 3 acquired this image on Aug. 13, 2018.",
   info_url: "https://www.youtube.com/watch?v=vR_QP8Nl5bQ"
-)
+  )
 
 Sample.create(name: "OS_Eagle Has Landed",
   filename: "one_shot_eagle_has_landed.mp3",
@@ -183,7 +191,7 @@ Sample.create(name: "OS_Eagle Has Landed",
   thumbnail_file: "apollo_astronaut.jpeg",
   description: "“The Eagle has landed,” Armstrong said at 4:18 p.m. The Eagle was the name of the lunar lander. Armstrong became the first person to walk on the moon, followed 20 minutes later by Aldrin.",
   info_url: "https://www.nasa.gov/mission_pages/apollo/missions/apollo11.html"
-)
+  )
 
 Sample.create(name: "OS_One Small Step",
   filename: "one_shot_one_small_step.mp3",
@@ -191,7 +199,7 @@ Sample.create(name: "OS_One Small Step",
   thumbnail_file: "one_small_step.jpeg",
   description: "The Eagle lunar lander, carrying Armstrong and Aldrin, landed on the Sea of Tranquility on July 20, 1969. Armstrong was the first one out, proclaiming for the ages: “That's one small step for man, one giant leap for mankind.”",
   info_url: "https://www.nasa.gov/mission_pages/apollo/apollo11.html"
-)
+  )
 
 Sample.create(name: "OS_One Giant Leap",
   filename: "one_shot_one_giant_leap.mp3",
@@ -199,7 +207,7 @@ Sample.create(name: "OS_One Giant Leap",
   thumbnail_file: "one_small_step.jpeg",
   description: "The Eagle lunar lander, carrying Armstrong and Aldrin, landed on the Sea of Tranquility on July 20, 1969. Armstrong was the first one out, proclaiming for the ages: “That's one small step for man, one giant leap for mankind.”",
   info_url: "https://www.nasa.gov/mission_pages/apollo/apollo11.html"
-)
+  )
 
 # Grooves(really One-shots)
 
@@ -217,7 +225,7 @@ Sample.create(name: "G_Passing Tempel 1 Stardust",
   thumbnail_file: "tempel_1.jpeg",
   description: "Stardust: Passing Comet Tempel 1",
   info_url: "https://solarsystem.nasa.gov/resources/331/stardust-swoops-by-tempel-1/"
-)
+  )
 
 Sample.create(name: "G_We Choose The Moon",
   filename: "groove_jfk_wechoosethemoonspeech.mp3",
@@ -225,7 +233,7 @@ Sample.create(name: "G_We Choose The Moon",
   thumbnail_file: "president_kennedy.jpeg",
   description: "“We choose to go to the Moon”, officially titled the Address at Rice University on the Nation's Space Effort, is a September 12, 1962, speech by United States President John F. Kennedy to further inform the public about his plan to land a man on the Moon before 1970.",
   info_url: "https://airandspace.si.edu/stories/editorial/we-choose-go-moon-and-other-apollo-speeches"
-)
+  )
 
 
 # Unused samples:
@@ -312,14 +320,6 @@ Sample.create(name: "G_We Choose The Moon",
 #   source_name: "SOHO_sun_sonification",
 #   thumbnail_file: "sun_sonification.jpeg",
 #   description: "The Stanford Experimental Physics Lab sonified data from the European Space Agency and NASA's Solar and Heliospheric Observatory (SOHO). This humming sound captures the Sun’s natural vibrations and provides scientists with a concrete representation of its dynamic movements.",
-#   info_url: "https://www.youtube.com/watch?v=vR_QP8Nl5bQ"
-#   )
-
-# Sample.create(name: "Whistler Mode 1 Parker",
-#   filename: "one_shot_psp_whistler_mode_waves.mp3",
-#   source_name: "parker_solar_probe",
-#   thumbnail_file: "parker_solar_probe.jpeg",
-#   description: "One year and three trips around the Sun later, NASA's Parker Solar Probe heard some weird, sci-fi sounds from plasma within the solar wind -- and those sounds may answer unanswered questions about how the wind forms.",
 #   info_url: "https://www.youtube.com/watch?v=vR_QP8Nl5bQ"
 #   )
 # Sample.create(name: "Whistler Mode 2 Parker",
