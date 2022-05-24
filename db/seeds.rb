@@ -118,7 +118,7 @@ Sample.create(name: "HH1_Eagle Has Landed",
 # Hats Open
 
 Sample.create(name: "HH2_Saturn Sounds Cassini",
-  filename: "hat_cassini_saturn_radio_emmisions_1.mp3",
+  filename: "hat_open_cassini_saturn_radio_emmisions_1.mp3",
   source_name: "cassini_saturn_radio_emmisions",
   thumbnail_file: "saturn_radio_emmissions.jpeg",
   description: "New research from the up-close Grand Finale orbits of NASA’s Cassini mission shows a surprisingly powerful interaction of plasma waves moving from Saturn to its moon Enceladus. Researchers converted the recording of plasma waves into a “whooshing” audio file that we can hear -- in the same way a radio translates electromagnetic waves into music. Much like air or water, plasma (the fourth state of matter) generates waves to carry energy. The recording was captured by the Radio Plasma Wave Science (RPWS) instrument Sept. 2, 2017, two weeks before Cassini was deliberately plunged into the atmosphere of Saturn.",
