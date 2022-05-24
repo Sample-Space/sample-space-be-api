@@ -89,14 +89,14 @@ Sample.create(name: "SN_One Small Step",
   info_url: "https://www.nasa.gov/mission_pages/apollo/apollo11.html"
 )
 
-  # Hats
+# Hats Closed
 
 Sample.create(name: "HH1_Saturn Sounds Cassini",
   filename: "hat_closed_cassini_saturn_radio_emmisions.mp3",
   source_name: "cassini",
   thumbnail_file: "cassini.jpeg",
   description: "Hear intriguing radio waves that our Cassini spacecraft collected near Jupiter in January 2001.",
-  info_url: "https://www.youtube.com/watch?v=vR_QP8Nl5bQ"
+  info_url: "https://directory.eoportal.org/web/eoportal/satellite-missions/t/themis"
 )
 
   Sample.create(name: "HH1_Radar Echoes Titan Huygens",
@@ -114,6 +114,8 @@ Sample.create(name: "HH1_Eagle Has Landed",
   description: "“The Eagle has landed,” Armstrong said at 4:18 p.m. The Eagle was the name of the lunar lander. Armstrong became the first person to walk on the moon, followed 20 minutes later by Aldrin.",
   info_url: "https://www.nasa.gov/mission_pages/apollo/missions/apollo11.html"
 )
+
+# Hats Open
 
 Sample.create(name: "HH2_Saturn Sounds Cassini",
   filename: "hat_cassini_saturn_radio_emmisions_1.mp3",
