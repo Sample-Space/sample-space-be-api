@@ -12,7 +12,26 @@ RSpec.describe KitObject, type: :poro do
       texture: "Whistler Mode 1 Parker",
       one_shot_1: "Whistler Waves EMFISIS",
       one_shot_2: "Langmuir Waves Parker",
-      groove_file: "groove_stardust_passing_comet_temple_1.mp3"
+      groove_file: "groove_stardust_passing_comet_temple_1.mp3",
+      sequence: "[
+        ['C3', 'F#3'],
+        ['D#3', 'E3'],
+        ['D3'],
+        ['D#3'],
+        ['C#3', 'F#3'],
+        ['D3', 'E3', 'F#3'],
+        ['D#3'],
+        ['D3'],
+        ['C3'],
+        ['D#3', 'F3'],
+        ['D3', 'F3'],
+        ['F3'],
+        ['C#3', 'G3'],
+        ['D#3', 'F#3'],
+        ['D#3', 'F#3'],
+        ['C3', 'D3']
+      ]",
+      bpm: 180
     )
     Sample.create(name: "Star 808 Kepler KIC",
       filename: "kick_kepler_star_808.mp3",
@@ -78,6 +97,12 @@ RSpec.describe KitObject, type: :poro do
 
     expect(object.name).to eq "Andromeda Pain"
     expect(object.id).to eq @record.id
+
+    expect(object.sequence).to eq @record.sequence
+    expect(object.sequence).to be_a String
+
+    expect(object.bpm).to eq @record.bpm
+    expect(object.bpm).to be_an Integer
 
     expect(object.groove_url).to be_a String
     expect(object.groove_url).to include "https://sampe-space.s3.amazonaws.com/#{@record.groove_file}"
