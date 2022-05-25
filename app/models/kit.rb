@@ -8,7 +8,6 @@ class Kit < ApplicationRecord
   validates :texture, presence: true
   validates :one_shot_1, presence: true
   validates :one_shot_2, presence: true
-  validates :groove_file, presence: true
   validates :sequence, presence: true
   validates :bpm, presence: true
 end
