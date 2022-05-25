@@ -14,7 +14,6 @@ class KitSerializer
         "sequence"=> kit.sequence,
         "bpm"=> kit.bpm,
         "elements"=> elements_hash(kit.elements),
-        "groove_url"=> kit.groove_url
       }
     }
   end
