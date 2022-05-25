@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_05_21_221153) do
+ActiveRecord::Schema.define(version: 2022_05_25_000205) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -28,6 +28,8 @@ ActiveRecord::Schema.define(version: 2022_05_21_221153) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "groove_file"
+    t.string "sequence"
+    t.integer "bpm"
   end
 
   create_table "samples", force: :cascade do |t|
