@@ -112,6 +112,24 @@ Obtains all pertinent details related to a specific kit, including attributes fo
 ## File & Server Setup
 Assuming you have your own sound and image files, these must be uploaded to your AWS S3 server. To ensure that each file can be found, you will want to make sure that your samples' `filename` and `thumbnail` attributes correspond to the exact filenames as they exist on the server. All the files must be stored in the same bucket, and the bucket's name must be set in the app/poros/presignable.rb module.
 
+To enable CORS, navigate to the bucket's permissions and insert the following
+
+```
+[
+    {
+        "AllowedHeaders": [],
+        "AllowedMethods": [
+            "GET"
+        ],
+        "AllowedOrigins": [
+            "https://sample-space-fe.herokuapp.com",
+            "http://localhost:3000"
+        ],
+        "ExposeHeaders": []
+    }
+]
+```
+
 ## Deployment
 To deploy to Heroku from the command line:
 ```
