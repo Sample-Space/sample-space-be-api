@@ -9,8 +9,6 @@ class NasaService
     format(response)
   end
 
-
-
   private
 
   def self.conn

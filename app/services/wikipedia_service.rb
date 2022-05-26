@@ -25,7 +25,10 @@ class WikipediaService
       req.params['utf8'] = ""
     end
 
-    return [@page_id, format(response)]
+    formatted = format(response)
+    id_to_key = @page_id.to_s.to_sym
+
+    return [get_title(id_to_key, formatted), get_description(id_to_key, formatted)]
   end
 
 
@@ -37,6 +40,14 @@ class WikipediaService
 
   def self.extract(response)
     data = JSON.parse(response.body, symbolize_names: true)[:query][:search][0][:pageid]
+  end
+
+  def self.get_title(id, response)
+    response[:query][:pages][id][:title]
+  end
+
+  def self.get_description(id, response)
+    response[:query][:pages][id][:extract]
   end
 
   def self.format(response)
