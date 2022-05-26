@@ -2,9 +2,9 @@
 ## Back End API
 ### version 1
 
-Sample Space is an interactive application that allows users to play space sounds as instruments, and create beat patterns from them. The sound originate from a wide range of sources, including NASA satellites and other scientific research. Information about the origins of each sound, along with links for further reading, are also provided to the user.
+Sample Space is an interactive application that allows users to play sounds from space as instruments, and create beat patterns from them. The sounds originate from a wide range of sources, including NASA satellites and other scientific research. Information about the origins of each sound, along with links for further reading, are also provided to the user.
 
-This repo is a back end Rails API that exposes data about Sample and Kit resources to the front end application. It handles requests via two endpoints and builds secure, signed links to sound and image files on an AWS S3 server.
+This repo is a back end Rails API that exposes data about `sample` and `kit` resources to the front end application. It handles requests via two endpoints and builds secure, signed links to sound and image files on an AWS S3 server.
 
 Try the deployed web application [here](https://sample-space-fe.herokuapp.com/).
 View the front end repo [here](https://github.com/Sample-Space/sampleSpaceFE).
