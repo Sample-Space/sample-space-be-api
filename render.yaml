@@ -1,7 +1,7 @@
 databases:
   - name: sample-space-be
-    databaseName: sample-space-be
-    user: sample-space-be
+    databaseName: sample-space-be-api-production
+    user: sample-space-be-api
 
 services:
   - type: web
