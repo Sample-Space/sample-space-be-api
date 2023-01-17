@@ -81,6 +81,6 @@ test:
 production:
   <<: *default
   url: <%= ENV['DATABASE_URL'] %>
-  database: sample-space-be-api-production
+  database: sample-space-be-api_production
   username: sample-space-be-api
   password: <%= ENV['SAMPLE-SPACE-BE-API_DATABASE_PASSWORD'] %>
